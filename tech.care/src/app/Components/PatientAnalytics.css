@@ -44,3 +44,8 @@ h1 {
 .lab-reports {
   border-radius: 1rem;
 }
+
+.chart {
+  height: 300px;
+  width: 100%;
+}

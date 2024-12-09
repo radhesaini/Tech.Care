@@ -1,60 +1,50 @@
 import React from "react";
 import "./PatientDetails.css";
-import { PatientsList } from "./PatientsList";
 import Report from "@/Pages/Report";
+import { useAppSelector } from "@/store/store";
 type Props = {};
 
 function PatientDetails({}: Props) {
-  const lab_results = [
-    "Complete Blood Count (CBC)",
-    "Echocardiogram",
-    "Liver Function Tests",
-    "Mammography",
-    "Urinalysis",
-    "Ultrasound",
-    "Prostate-Specific Antigen (PSA)",
-    "Hemoglobin A1C",
-    "Lipid Panel",
-    "Radiology Report",
-  ];
+  const stateItem = useAppSelector((state) => state.item.item);
+  const lab_results = stateItem.lab_results || [];
   return (
     <div className="patient-details-container">
       <div className="patient-details-container-right">
         <div className="avatar-name">
           <img
             className="profile-Image"
-            src="/LayerAvatar.png"
+            src={stateItem.profile_picture}
             alt="Profile Picture"
           />
-          <h3 className="name">Jessica Taylor</h3>
+          <h3 className="name">{stateItem.name}</h3>
         </div>
         <div className="patient-details">
           <div className="row">
             <img src="/BirthIcon.svg" alt="BirthIcon-icon" className="icon" />
             <div className="rows">
               <label htmlFor="">Date of Birth</label>
-              <h5 className="font-bold"> August 23, 1996</h5>
+              <h5 className="font-bold">{stateItem.date_of_birth}</h5>
             </div>
           </div>
           <div className="row">
             <img src="/FemaleIcon.svg" alt="FemaleIcon-icon" className="icon" />
             <div className="rows">
               <label htmlFor="">Gender</label>
-              <h5 className="font-bold">Female</h5>
+              <h5 className="font-bold">{stateItem.gender}</h5>
             </div>
           </div>
           <div className="row">
             <img src="/PhoneIcon.svg" alt="PhoneIcon-icon" className="icon" />
             <div className="rows">
               <label htmlFor="">Contact Info.</label>
-              <h5 className="font-bold">(415) 555-1234</h5>
+              <h5 className="font-bold">{stateItem.phone_number}</h5>
             </div>
           </div>
           <div className="row">
             <img src="/PhoneIcon.svg" alt="PhoneIcon-icon" className="icon" />
             <div className="rows">
               <label htmlFor="">Emergency Contacts</label>
-              <h5 className="font-bold">(415) 555-5678</h5>
+              <h5 className="font-bold">{stateItem.emergency_contact}</h5>
             </div>
           </div>
           <div className="row">
@@ -65,7 +55,7 @@ function PatientDetails({}: Props) {
             />
             <div className="rows">
               <label htmlFor="">Insurance Provider</label>
-              <h5 className="font-bold">Sunrise Health Assurance</h5>
+              <h5 className="font-bold">{stateItem.insurance_type}</h5>
             </div>
           </div>
           <button
@@ -81,7 +71,7 @@ function PatientDetails({}: Props) {
         <div className="reports">
           <div className="flow-root">
             <ul role="list">
-              {lab_results.map((item, index) => (
+              {lab_results.map((item: any, index: number) => (
                 <Report key={index} name={item} src="#" />
               ))}
             </ul>

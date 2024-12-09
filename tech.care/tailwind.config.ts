@@ -16,3 +16,12 @@ export default {
   },
   plugins: [],
 } satisfies Config;
+
+exports = {
+  // ...
+  variants: {
+    extend: {
+      backgroundColor: ["group-focus"],
+    },
+  },
+};

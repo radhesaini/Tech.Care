@@ -21,6 +21,7 @@
   display: flex;
   align-items: center;
   padding: 1.25rem;
+  cursor: pointer;
 }
 
 .patient-Intro {
@@ -50,7 +51,7 @@
   color: blue;
 }
 
-.patient:hover {
+/* .patient:hover {
   background: #d8fcf7 0% 0% no-repeat padding-box;
   opacity: 1;
-}
+} */
