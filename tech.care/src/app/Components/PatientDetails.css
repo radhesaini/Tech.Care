@@ -1,0 +1,74 @@
+.patient-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.patient-details-container-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  margin-top: -0.5rem;
+}
+
+.avatar-name {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-Image {
+  border-radius: 50%;
+  width: 80%;
+}
+
+.name {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+  font-weight: 800;
+}
+
+.patient-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  background-color: #ffffff;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.bottom-Btn {
+  border-radius: 3.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.lab-reports {
+  padding: 1.25rem;
+  background-color: #ffffff;
+  height: 349px;
+  overflow: auto;
+}
+
+.reports {
+  margin-top: 1rem;
+}

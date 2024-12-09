@@ -40,4 +40,17 @@ body {
 
 .details-Container {
   margin-top: 2rem;
+  border-radius: 1rem;
+  background-color: transparent;
 }
+
+.patients-Container,
+.patientsDetails-Container {
+  width: 50%;
+  border-radius: 1rem;
+  /* background-color: red; */
+}
+/* 
+.patientDiagnosis-Container{
+  
+} */

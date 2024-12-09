@@ -1,0 +1,43 @@
+.main-Div {
+  width: 228px;
+  height: 242px;
+  /* UI Properties */
+  background: #e0f3fa 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  opacity: 1;
+  padding: 1rem;
+}
+
+/* .cardImg {
+  padding: 1rem;
+} */
+
+.card-label {
+  font-size: 1rem;
+  text-align: left;
+  font: normal normal medium 16px/22px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.result {
+  font-size: 0.85rem;
+  text-align: left;
+  font-family: Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+  font-weight: normal;
+}
+
+.value {
+  font-weight: 800;
+  font-size: 1.85rem;
+  text-align: left;
+  font-family: Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+}

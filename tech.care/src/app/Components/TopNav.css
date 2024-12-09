@@ -5,3 +5,29 @@
 * {
   color: #072635;
 }
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-Intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.role {
+  font-size: 0.85rem;
+  color: #707070;
+  font: normal normal normal 14px/19px Manrope;
+}
+
+.right-Ellipse:hover {
+  color: rgb(6, 6, 247);
+}

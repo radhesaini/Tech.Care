@@ -1,0 +1,11 @@
+li:hover {
+  background: #f6f7f8 0% 0% no-repeat padding-box;
+  padding: 0.5rem;
+}
+
+li {
+  height: 40px;
+  /* UI Properties */
+  padding: 0.5rem;
+  opacity: 1;
+}
