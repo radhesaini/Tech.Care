@@ -21,9 +21,9 @@ export default function Patients({}: Props) {
   useEffect(() => {
     getPatients()
       .then((res: any) => {
-        setPatients(res.data);
+        setPatients(res);
         console.log(res);
-        onSelect(0, res.data[0]);
+        onSelect(0, res[0]);
       })
       .catch((err) => console.log(err));
   }, []);
